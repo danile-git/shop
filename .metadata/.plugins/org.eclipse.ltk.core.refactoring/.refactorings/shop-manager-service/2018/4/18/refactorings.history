@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.shop.service&apos; to &apos;com.shop.service.inter&apos;&#x0D;&#x0A;- Original project: &apos;shop-manager-service&apos;&#x0D;&#x0A;- Original element: &apos;shop-manager-service/src/main/java/com.shop.service&apos;&#x0D;&#x0A;- Renamed element: &apos;shop-manager-service/src/main/java/com.shop.service.inter&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.shop.service&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;com.shop.service" name="com.shop.service.inter" qualified="false" references="true" stamp="1525061047278" textual="false" version="1.0"/>
+</session>
