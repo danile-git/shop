@@ -1,7 +1,0 @@
-package com.shop.service.inter;
-
-import java.util.Map;
-
-public interface PictureService {
- // Map uploadFile(MulitpartFile uploadFile);
-}
