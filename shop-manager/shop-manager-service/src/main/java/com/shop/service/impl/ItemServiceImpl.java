@@ -1,5 +1,6 @@
 package com.shop.service.impl;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,8 @@ import org.springframework.stereotype.Service;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.shop.common.pojo.EUDataGirdResult;
+import com.shop.common.pojo.ShopResult;
+import com.shop.common.util.IDUtil;
 import com.shop.mapper.TbItemMapper;
 import com.shop.pojo.TbItem;
 import com.shop.pojo.TbItemExample;
@@ -37,6 +40,18 @@ public class ItemServiceImpl implements ItemService {
 		PageInfo<TbItem> pageInfo = new PageInfo<>(list);
 		result.setTotal((int) pageInfo.getTotal());
 		return result;
+	}
+
+	@Override
+	public ShopResult createItem(TbItem item) {
+		//生成商品id
+		Long itemId=IDUtil.genItemId();
+		item.setId(itemId);
+		item.setStatus((byte) 1);
+		item.setCreated(new Date());
+		item.setUpdated(new Date());
+		itemMapper.insert(item);
+		return ShopResult.ok();
 	}
 
 }
