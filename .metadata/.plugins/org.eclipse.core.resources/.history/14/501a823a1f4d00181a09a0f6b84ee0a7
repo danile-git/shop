@@ -1,0 +1,9 @@
+package com.shop.controller;
+
+public class FtpTest {
+   public void ftpClient(){
+	   //创建ftp对象
+	   FTPClient
+	   //
+   }
+}

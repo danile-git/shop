@@ -1,0 +1,5 @@
+package com.shop.service.inter;
+
+public class PictureService {
+
+}
