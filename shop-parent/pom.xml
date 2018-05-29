@@ -214,7 +214,5 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-	<modules>
-		<module>test</module>
-	</modules>
+
 </project>
